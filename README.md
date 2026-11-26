@@ -12,8 +12,8 @@ I'm building machine-learning skills on top of a quantitative background (Applie
 
 | Project | What it is | Status |
 |---|---|---|
-| [**canada-mortality-forecasting**](https://github.com/maqimu-byte/canada-mortality-forecasting) | Lee-Carter vs. machine learning for forecasting Canadian death rates (StatCan life tables), with a term-life pricing case study | 🚧 In progress |
-| [**life-insurance-needs-ai**](https://github.com/maqimu-byte/life-insurance-needs-ai) | Tested needs-analysis engine plus an LLM layer that extracts fact-find data and drafts plain-language explanations | 🚧 In progress |
+| [**canada-mortality-forecasting**](https://github.com/maqimu-byte/canada-mortality-forecasting) | Lee-Carter vs. gradient boosting for forecasting Canadian death rates (StatCan, 1980–2024), with a 10-year backtest and a term-life pricing case study. **Finding:** assuming mortality would keep improving under-priced 10-year term by ~22% for a 40-year-old man; model choice mattered far less | ✅ Analysis complete |
+| [**life-insurance-needs-ai**](https://github.com/maqimu-byte/life-insurance-needs-ai) | Tested capital-needs engine (pydantic, 20 unit tests) plus an LLM layer that extracts fact-find data and drafts explanations, with a checker that verifies every number against the engine | 🚧 Engine done; LLM evaluation next |
 <!-- COURSE PROJECTS: uncomment each row once its repo is made public
 | [**telco-churn-prediction**](https://github.com/maqimu-byte/telco-churn-prediction) | Churn model (ROC-AUC 0.843), with an imbalance and augmentation study and a leakage demonstration; a close analogue of insurance lapse prediction | ✅ Complete |
 | [**used-vehicle-ml**](https://github.com/maqimu-byte/used-vehicle-ml) | Price regression (test R² ≈ 0.93) and an imbalanced "sells on schedule" classifier with leak-free pipelines | ✅ Complete |
@@ -24,7 +24,9 @@ I'm building machine-learning skills on top of a quantitative background (Applie
 
 - **Languages and tools:** Python, pandas, NumPy, scikit-learn, SciPy, matplotlib, seaborn, Jupyter, Git
 - **Machine learning:** regression and classification, data cleaning and EDA, leak-free pipelines, cross-validation and tuning, imbalanced data (class weights, SMOTE), model evaluation (ROC/PR-AUC, bootstrap CIs), error analysis
-- **Domain:** life insurance (term products, client fact-finding, needs analysis), estate planning, financial mathematics
+- **Forecasting and model risk:** mortality modelling (Lee-Carter), time-based backtesting against benchmarks, validation windows, permutation importance
+- **Applied LLMs:** structured extraction with schema validation, output verification, evaluation harnesses, pydantic, pytest
+- **Domain:** life insurance (term products, client fact-finding, needs analysis, pricing), estate planning, financial mathematics, OSFI E-23 model risk
 
 ### 🎓 Education and credentials
 
